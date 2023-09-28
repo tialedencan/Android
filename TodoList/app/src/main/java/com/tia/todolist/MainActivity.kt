@@ -2,8 +2,10 @@ package com.tia.todolist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.graphics.scaleMatrix
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import org.kotlinmath.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,5 +30,12 @@ class MainActivity : AppCompatActivity() {
         btnDeleteDoneTodos.setOnClickListener {
             todoAdapter.deleteDoneTodos()
         }
+
+        
+        val z2 = 4 + 3 * I
+        val z4 = "4+3i".toComplex()
+        val z3 = z2+z4
+
+        println(z3)
     }
 }
